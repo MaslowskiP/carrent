@@ -1,0 +1,19 @@
+defalut_homepage:
+    path: /
+    defaults:
+        _controller: AppBundle:Default:index
+
+lista:
+    path: /lista
+    defaults:
+        _controller: AppBundle:Default:lista
+
+rezerwacja:
+    path: /rezerwacja
+    defaults:
+        _controller: AppBundle:Default:rezerwacja
+
+platnosc:
+    path: /platnosc/{id_samochodu}
+    defaults:
+        _controller: AppBundle:Default:platnosc
