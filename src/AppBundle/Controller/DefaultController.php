@@ -9,7 +9,10 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\RedirectRequest;
 use CarRent\Header;
-
+use CarRent\Main;
+use CarRent\Lista;
+use CarRent\Rezerwacja;
+use CarRent\Kontakt;
 
 
 class DefaultController extends Controller
@@ -17,23 +20,30 @@ class DefaultController extends Controller
     
     public function indexAction(Request $request) {
 
-		$strona = new Header();
-		//return new Response('to jest strona g³ówna <BR>linki:<BR><a href="http://v-ie.uek.krakow.pl/~s181008/app_dev.php/lista">lista samochodów</a><BR><a href="http://v-ie.uek.krakow.pl/~s181008/app_dev.php/rezerwacja">rezerwacja samochodów</a><BR><a href="http://v-ie.uek.krakow.pl/~s181008/app_dev.php/platnosc/nazwa">p³atnoœæ samochodów</a>');
-		return $this->render('default/styles.html.twig');    }
+		$header = new Header();
+		$page = new Main();
+		return $this->render('default/styles.html.twig');    
+	}
 
 	public function listaAction() {
-		return new Response('tutaj bêdzie lista samochodów tak jak w projekcie');
+		$header = new Header();
+		$page = new Lista();
+		return $this->render('default/styles.html.twig');   
 	
 	}
 
 	public function rezerwacjaAction() {
-		return new Response('tu mo¿emy sobie rezerwowaæ samochody');
+		$header = new Header();
+		$page = new Rezerwacja();
+		return $this->render('default/styles.html.twig');   
+
 	
 	}
 
 	public function kontaktAction() {
-		return new Response('tu bedzie kontakt jakis telefon itp itd');
-
+		$header = new Header();
+		$page = new Kontakt();
+		return $this->render('default/styles.html.twig'); 
 	}
 
 	public function platnoscAction(Request $request) {

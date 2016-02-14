@@ -15,22 +15,26 @@ class __TwigTemplate_0d494d0d29d44759e1019e434fbc6001a371e6f6272c7a0678ce429fe4a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0e6fbafd84bc69f83a7e87aa27b3b4333c8a0c394c7b27648b81e814b2341188 = $this->env->getExtension("native_profiler");
-        $__internal_0e6fbafd84bc69f83a7e87aa27b3b4333c8a0c394c7b27648b81e814b2341188->enter($__internal_0e6fbafd84bc69f83a7e87aa27b3b4333c8a0c394c7b27648b81e814b2341188_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/styles.html.twig"));
+        $__internal_c51fef84c63c1e6288618111597804890c75e7bc773c8636b9c8375e9ed88da4 = $this->env->getExtension("native_profiler");
+        $__internal_c51fef84c63c1e6288618111597804890c75e7bc773c8636b9c8375e9ed88da4->enter($__internal_c51fef84c63c1e6288618111597804890c75e7bc773c8636b9c8375e9ed88da4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/styles.html.twig"));
 
         // line 1
         echo "<style>
+div.page {
+\t
+
+}
 div.header {
+\tpadding-bottom: 200;
 \twidth: 800;
 \tbackground-color: lightblue;
+\ttext-align: justify;
 }
-
-
 
 
 </style>";
         
-        $__internal_0e6fbafd84bc69f83a7e87aa27b3b4333c8a0c394c7b27648b81e814b2341188->leave($__internal_0e6fbafd84bc69f83a7e87aa27b3b4333c8a0c394c7b27648b81e814b2341188_prof);
+        $__internal_c51fef84c63c1e6288618111597804890c75e7bc773c8636b9c8375e9ed88da4->leave($__internal_c51fef84c63c1e6288618111597804890c75e7bc773c8636b9c8375e9ed88da4_prof);
 
     }
 
@@ -45,12 +49,16 @@ div.header {
     }
 }
 /* <style>*/
+/* div.page {*/
+/* 	*/
+/* */
+/* }*/
 /* div.header {*/
+/* 	padding-bottom: 200;*/
 /* 	width: 800;*/
 /* 	background-color: lightblue;*/
+/* 	text-align: justify;*/
 /* }*/
-/* */
-/* */
 /* */
 /* */
 /* </style>*/
