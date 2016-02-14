@@ -129,6 +129,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'platnosc')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::platnoscAction',));
         }
 
+        // kontakt
+        if ($pathinfo === '/kontakt') {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::kontaktAction',  '_route' => 'kontakt',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

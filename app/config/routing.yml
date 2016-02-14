@@ -17,3 +17,8 @@ platnosc:
     path: /platnosc/{id_samochodu}
     defaults:
         _controller: AppBundle:Default:platnosc
+
+kontakt:
+    path: /kontakt
+    defaults:
+        _controller: AppBundle:Default:kontakt
