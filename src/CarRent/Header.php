@@ -6,11 +6,12 @@ class Header {
 
 	public function __construct() {
 		$homepage = "http://v-ie.uek.krakow.pl/~s181008/app_dev.php";
-		$baner = "http://i.imgur.com/kcs9A4M.png";
-		$button1 = "http://i.imgur.com/94AUorF.png";
-		$button2 = "http://i.imgur.com/gquR8Z0.png";
-		$button3 = "http://i.imgur.com/oKn6xn4.png";
+		$baner = "http://v-ie.uek.krakow.pl/~s181008/RJ.png";
+		$button1 = "http://v-ie.uek.krakow.pl/~s181008/przycisk1.jpg";
+		$button2 = "http://v-ie.uek.krakow.pl/~s181008/przycisk2.jpg";
+		$button3 = "http://v-ie.uek.krakow.pl/~s181008/przycisk3.jpg";
 		
+		echo "<head><meta charset='UTF-8'></head><body>";
 		echo "<div class='page'><center><div class='header'>";
 		echo "<center><a href='$homepage'><img src='$baner' alt='BANER' width='600' height='170' align='center'></a><br>";
 		echo "<a href='$homepage/lista'><img src='$button1' alt='PRZYCISK1'></a>";

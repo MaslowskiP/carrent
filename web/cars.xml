@@ -1,0 +1,176 @@
+<?xml version="1.0" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+
+<carlist>
+	
+	<car>
+		<brand>Audi</brand>
+		<model>A3</model>
+		<year data="year">2012</year>
+		<color>Czerwony</color>
+		<class>C</class>
+		<cost prize="zl">120</cost>
+	</car>
+	<car>
+		<brand>Audi</brand>
+		<model>A4</model>
+		<year data="year">2013</year>
+		<color>Czarny</color>
+		<class>D</class>
+		<cost prize="zl">170</cost>
+	</car>
+	<car>
+		<brand>Audi</brand>
+		<model>A8</model>
+		<year data="year">2015</year>
+		<color>Czarny</color>
+		<class>F</class>
+		<cost prize="zl">300</cost>
+	</car>
+	<car>
+		<brand>Audi</brand>
+		<model>TT</model>
+		<year data="year">2013</year>
+		<color>Zółty</color>
+		<class>G</class>
+		<cost prize="zl">500</cost>
+	</car>
+	<car>
+		<brand>BMW</brand>
+		<model>520d</model>
+		<year data="year">2013</year>
+		<color>Srebrny</color>
+		<class>E</class>
+		<cost prize="zl">250</cost>
+	</car>
+	<car>
+		<brand>Ford</brand>
+		<model>Focus</model>
+		<year data="year">2014</year>
+		<color>Zielony</color>
+		<class>C</class>
+		<cost prize="zl">200</cost>
+	</car>
+	<car>
+		<brand>Ford</brand>
+		<model>Ka</model>
+		<year data="year">2016</year>
+		<color>Niebieski</color>
+		<class>A</class>
+		<cost prize="zl">70</cost>
+	</car>
+	<car>
+		<brand>Hyundai</brand>
+		<model>i10</model>
+		<year data="year">2015</year>
+		<color>Zielony</color>
+		<class>A</class>
+		<cost prize="zl">80</cost>
+	</car>
+	<car>
+		<brand>Hyundai</brand>
+		<model>i20</model>
+		<year data="year">2015</year>
+		<color>Czarny</color>
+		<class>B</class>
+		<cost prize="zl">120</cost>
+	</car>
+	<car>
+		<brand>Hyundai</brand>
+		<model>i30</model>
+		<year data="year">2015</year>
+		<color>Srebrny</color>
+		<class>C</class>
+		<cost prize="zl">150</cost>
+	</car>
+	<car>
+		<brand>Mercedes-Benz</brand>
+		<model>W205</model>
+		<year data="year">2014</year>
+		<color>Srebrny</color>
+		<class>D</class>
+		<cost prize="zl">200</cost>
+	</car>
+	<car>
+		<brand>Mercedes-Benz</brand>
+		<model>W245</model>
+		<year data="year">2011</year>
+		<color>Srebrny</color>
+		<class>C</class>
+		<cost prize="zl">160</cost>
+	</car>
+	<car>
+		<brand>Opel</brand>
+		<model>Corsa</model>
+		<year data="year">2016</year>
+		<color>Granatowy</color>
+		<class>B</class>
+		<cost prize="zl">130</cost>
+	</car>
+	<car>
+		<brand>Opel</brand>
+		<model>Astra</model>
+		<year data="year">2015</year>
+		<color>Szary</color>
+		<class>C</class>
+		<cost prize="zl">140</cost>
+	</car>
+	<car>
+		<brand>Opel</brand>
+		<model>Vivaro</model>
+		<year data="year">2014</year>
+		<color>Biały</color>
+		<class>VAN</class>
+		<cost prize="zl">400</cost>
+	</car>
+	<car>
+		<brand>Toyota</brand>
+		<model>Aigo</model>
+		<year data="year">2016</year>
+		<color>Różowy</color>
+		<class>A</class>
+		<cost prize="zl">100</cost>
+	</car>
+	<car>
+		<brand>Opel</brand>
+		<model>Yaris</model>
+		<year data="year">2013</year>
+		<color>Niebieski</color>
+		<class>B</class>
+		<cost prize="zl">130</cost>
+	</car>
+	<car>
+		<brand>VW</brand>
+		<model>Polo</model>
+		<year data="year">2016</year>
+		<color>Granatowy</color>
+		<class>B</class>
+		<cost prize="zl">140</cost>
+	</car>
+	<car>
+		<brand>VW</brand>
+		<model>Golf</model>
+		<year data="year">2015</year>
+		<color>Czerwony</color>
+		<class>C</class>
+		<cost prize="zl">160</cost>
+	</car>
+	<car>
+		<brand>VW</brand>
+		<model>Passat</model>
+		<year data="year">2016</year>
+		<color>Czarny</color>
+		<class>D</class>
+		<cost prize="zl">280</cost>
+	</car>
+	<car>
+		<brand>VW</brand>
+		<model>Phaeton</model>
+		<year data="year">2012</year>
+		<color>Czarny</color>
+		<class>F</class>
+		<cost prize="zl">300</cost>
+	</car>
+	
+</carlist>
+</rss>

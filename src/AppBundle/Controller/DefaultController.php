@@ -13,6 +13,9 @@ use CarRent\Main;
 use CarRent\Lista;
 use CarRent\Rezerwacja;
 use CarRent\Kontakt;
+use Symfony\Component\Serializer\Serializer;
+use Symfony\Component\Serializer\Encoder\XmlEncoder;
+use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
 
 
 class DefaultController extends Controller
