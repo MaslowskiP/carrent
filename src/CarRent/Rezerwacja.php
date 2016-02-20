@@ -25,9 +25,9 @@ class Rezerwacja {
 				$status = $car->status; 
 				if ($status == 1)
 				{
-					$status = "wolny";
+					$status = "<a href='http://v-ie.uek.krakow.pl/~s181008/app_dev.php/akceptacja/$id'>Rezerwuj</a>";
 				} else {
-					$status = "zajêty";
+					$status = "Zajêty";
 				}
 					
 				echo '<tr><td>'.$brand.'</td><td>'.$model.'</td><td>'.$year.'</td><td>'.$color.'</td><td>'.$cost.' zÅ‚</td><td>'.$status.'</td></tr>';
