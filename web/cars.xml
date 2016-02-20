@@ -8,168 +8,189 @@
 		<model>A3</model>
 		<year data="year">2012</year>
 		<color>Czerwony</color>
-		<class>C</class>
+		<id>1</id>
 		<cost prize="zl">120</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Audi</brand>
 		<model>A4</model>
 		<year data="year">2013</year>
 		<color>Czarny</color>
-		<class>D</class>
+		<id>2</id>
 		<cost prize="zl">170</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Audi</brand>
 		<model>A8</model>
 		<year data="year">2015</year>
 		<color>Czarny</color>
-		<class>F</class>
+		<id>3</id>
 		<cost prize="zl">300</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Audi</brand>
 		<model>TT</model>
 		<year data="year">2013</year>
 		<color>Zółty</color>
-		<class>G</class>
+		<id>4</id>
 		<cost prize="zl">500</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>BMW</brand>
 		<model>520d</model>
 		<year data="year">2013</year>
 		<color>Srebrny</color>
-		<class>E</class>
+		<id>5</id>
 		<cost prize="zl">250</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Ford</brand>
 		<model>Focus</model>
 		<year data="year">2014</year>
 		<color>Zielony</color>
-		<class>C</class>
+		<id>6</id>
 		<cost prize="zl">200</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Ford</brand>
 		<model>Ka</model>
 		<year data="year">2016</year>
 		<color>Niebieski</color>
-		<class>A</class>
+		<id>7</id>
 		<cost prize="zl">70</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Hyundai</brand>
 		<model>i10</model>
 		<year data="year">2015</year>
 		<color>Zielony</color>
-		<class>A</class>
+		<id>8</id>
 		<cost prize="zl">80</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Hyundai</brand>
 		<model>i20</model>
 		<year data="year">2015</year>
 		<color>Czarny</color>
-		<class>B</class>
+		<id>9</id>
 		<cost prize="zl">120</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Hyundai</brand>
 		<model>i30</model>
 		<year data="year">2015</year>
 		<color>Srebrny</color>
-		<class>C</class>
+		<id>10</id>
 		<cost prize="zl">150</cost>
+		<status>0</status>
 	</car>
 	<car>
 		<brand>Mercedes-Benz</brand>
 		<model>W205</model>
 		<year data="year">2014</year>
 		<color>Srebrny</color>
-		<class>D</class>
+		<id>11</id>
 		<cost prize="zl">200</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Mercedes-Benz</brand>
 		<model>W245</model>
 		<year data="year">2011</year>
 		<color>Srebrny</color>
-		<class>C</class>
+		<id>12</id>
 		<cost prize="zl">160</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Opel</brand>
 		<model>Corsa</model>
 		<year data="year">2016</year>
 		<color>Granatowy</color>
-		<class>B</class>
+		<id>13</id>
 		<cost prize="zl">130</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Opel</brand>
 		<model>Astra</model>
 		<year data="year">2015</year>
 		<color>Szary</color>
-		<class>C</class>
+		<id>14</id>
 		<cost prize="zl">140</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Opel</brand>
 		<model>Vivaro</model>
 		<year data="year">2014</year>
 		<color>Biały</color>
-		<class>VAN</class>
+		<id>15</id>
 		<cost prize="zl">400</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Toyota</brand>
 		<model>Aigo</model>
 		<year data="year">2016</year>
 		<color>Różowy</color>
-		<class>A</class>
+		<id>16</id>
 		<cost prize="zl">100</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Opel</brand>
 		<model>Yaris</model>
 		<year data="year">2013</year>
 		<color>Niebieski</color>
-		<class>B</class>
+		<id>17</id>
 		<cost prize="zl">130</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>VW</brand>
 		<model>Polo</model>
 		<year data="year">2016</year>
 		<color>Granatowy</color>
-		<class>B</class>
+		<id>18</id>
 		<cost prize="zl">140</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>VW</brand>
 		<model>Golf</model>
 		<year data="year">2015</year>
 		<color>Czerwony</color>
-		<class>C</class>
+		<id>19</id>
 		<cost prize="zl">160</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>VW</brand>
 		<model>Passat</model>
 		<year data="year">2016</year>
 		<color>Czarny</color>
-		<class>D</class>
+		<id>20</id>
 		<cost prize="zl">280</cost>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>VW</brand>
 		<model>Phaeton</model>
 		<year data="year">2012</year>
 		<color>Czarny</color>
-		<class>F</class>
+		<id>21</id>
 		<cost prize="zl">300</cost>
+		<status>1</status>
 	</car>
 	
 </carlist>

@@ -41,6 +41,7 @@ class appDevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         'rezerwacja' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'AppBundle\\Controller\\DefaultController::rezerwacjaAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/rezerwacja',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'platnosc' => array (  0 =>   array (    0 => 'id_samochodu',  ),  1 =>   array (    '_controller' => 'AppBundle\\Controller\\DefaultController::platnoscAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'id_samochodu',    ),    1 =>     array (      0 => 'text',      1 => '/platnosc',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'kontakt' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'AppBundle\\Controller\\DefaultController::kontaktAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/kontakt',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'akceptacja' => array (  0 =>   array (    0 => 'id_samochodu',  ),  1 =>   array (    '_controller' => 'AppBundle\\Controller\\DefaultController::akceptacjaAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'id_samochodu',    ),    1 =>     array (      0 => 'text',      1 => '/akceptacja',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
     );
         }
     }

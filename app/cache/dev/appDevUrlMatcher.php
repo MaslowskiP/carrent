@@ -134,6 +134,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::kontaktAction',  '_route' => 'kontakt',);
         }
 
+        // akceptacja
+        if (0 === strpos($pathinfo, '/akceptacja') && preg_match('#^/akceptacja/(?P<id_samochodu>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'akceptacja')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::akceptacjaAction',));
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

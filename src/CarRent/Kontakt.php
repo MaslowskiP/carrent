@@ -6,7 +6,7 @@ class Kontakt {
 
 	public function __construct() {
 
-		echo "Dane kontaktowe:<br>ul. Zakopiañska 56<br>30-418 Kraków<br>tel: 502 669 996";
+		echo "Dane kontaktowe:<br>ul. ZakopiaÅ„ska 56<br>30-418 KrakÃ³w<br>tel: 502 669 996";
 
 	}
 }

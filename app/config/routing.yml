@@ -22,3 +22,8 @@ kontakt:
     path: /kontakt
     defaults:
         _controller: AppBundle:Default:kontakt
+
+akceptacja:
+    path: /akceptacja/{id_samochodu}
+    defaults:
+        _controller: AppBundle:Default:akceptacja

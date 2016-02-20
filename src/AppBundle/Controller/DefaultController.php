@@ -13,9 +13,7 @@ use CarRent\Main;
 use CarRent\Lista;
 use CarRent\Rezerwacja;
 use CarRent\Kontakt;
-use Symfony\Component\Serializer\Serializer;
-use Symfony\Component\Serializer\Encoder\XmlEncoder;
-use Symfony\Component\Serializer\Normalizer\GetSetMethodNormalizer;
+use CarRent\Formularz;
 
 
 class DefaultController extends Controller
@@ -38,6 +36,15 @@ class DefaultController extends Controller
 	public function rezerwacjaAction() {
 		$header = new Header();
 		$page = new Rezerwacja();
+		return $this->render('default/styles.html.twig');   
+
+	
+	}
+
+	public function akceptacjaAction(Request $request) {
+		$id = $request->get('id_samochodu');
+		$header = new Header();
+		$page = new Formularz($id);
 		return $this->render('default/styles.html.twig');   
 
 	
