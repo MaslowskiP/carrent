@@ -11,7 +11,7 @@
 		<id>1</id>
 		<cost prize="zl">120</cost>
 		<status>1</status>
-		<date>18-03-2016 19:24</date>
+		<date>10-02-2016 20:00</date>
 		<class>C</class>		</car>
 	<car>
 		<brand>Audi</brand>
@@ -61,7 +61,7 @@
 		<id>6</id>
 		<cost prize="zl">200</cost>
 		<status>1</status>
-		<date>27-02-2016 19:25</date>
+		<date>10-02-2016 20:00</date>
 		<class>C</class>		</car>
 	<car>
 		<brand>Ford</brand>
@@ -181,7 +181,7 @@
 		<id>18</id>
 		<cost prize="zl">140</cost>
 		<status>1</status>
-		<date>06-03-2016 19:25</date>
+		<date>10-02-2016 20:00</date>
 		<class>B</class>		</car>
 	<car>
 		<brand>VW</brand>
@@ -191,7 +191,7 @@
 		<id>19</id>
 		<cost prize="zl">160</cost>
 		<status>1</status>
-		<date>06-03-2016 19:19</date>
+		<date>10-02-2016 20:00</date>
 		<class>C</class>		</car>
 	<car>
 		<brand>VW</brand>
@@ -201,7 +201,7 @@
 		<id>20</id>
 		<cost prize="zl">280</cost>
 		<status>1</status>
-		<date>18-03-2016 19:23</date>
+		<date>10-02-2016 20:00</date>
 		<class>D</class>		</car>
 	<car>
 		<brand>VW</brand>
@@ -211,7 +211,7 @@
 		<id>21</id>
 		<cost prize="zl">300</cost>
 		<status>1</status>
-		<date>07-03-2016 19:22</date>
+		<date>10-02-2016 20:00</date>
 		<class>F</class>		</car>
 	
 </carlist>
