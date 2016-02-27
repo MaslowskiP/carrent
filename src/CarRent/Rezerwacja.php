@@ -14,7 +14,7 @@ class Rezerwacja {
 			$cars = $asd->carlist->car; 
 			echo "<center><table border='1'>";
 			echo "<tr><td>Marka</td><td>Model</td><td>Rocznik</td><td>Kolor</td><td>Segment</td><td>Cena za dzień</td><td>Aktualny status samochodu</td></tr>";
-			$dzisiaj = date('d-m-Y H:i'); 
+			$dzisiaj = date('U'); 
 			foreach($cars as $car) 
 				{ 
 				$brand = $car->brand; 
@@ -25,11 +25,14 @@ class Rezerwacja {
 				$cost = $car->cost; 
 				$status = $car->status; 
 				$date = $car->date;
+				$date = date('U', strtotime($date));
 				$class = $car->class;
+				
 				if ($status == 1 && $dzisiaj > $date)
 				{
 					$status = "<a href='http://v-ie.uek.krakow.pl/~s181008/app_dev.php/akceptacja/$id'>Rezerwuj samochód</a>";
 				} else {
+					$date = $car->date;
 					$status = "Zarezerwowany do $date";
 				}
 					

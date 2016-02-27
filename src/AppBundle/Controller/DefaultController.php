@@ -103,17 +103,19 @@ class DefaultController extends Controller
 			$signature_check = $request->request->get('signature');
 			
 		if ($signature_check == $signature) {
-	
+			
 			$mailto = $request->request->get('email');
 			$topic = "Wypożyczenie samochodu";
 			$message = "Transakcja przebiegła prawidłowo. Dziękujemy za skorzystanie z usług naszego serwisu.";
 			$message = wordwrap($message, 70);
 			$mailHeader = "From: Rycerze_Jedi; kontakt@rycerzejedi.com";
 			mail($mailto, $topic, $message, $mailHeader) or die('Błąd: wiadomość nie została wysłana');
+
 			$xml_doc = 'cars.xml';
 			$asd = simplexml_load_file($xml_doc);
-			$control_all = $request->request->get('control');
-			list($id, $howLong) = explode("A", $control_all);
+			$controll_all = $request->request->get('control');
+			list($id, $howLong) = explode("A", $controll_all);
+
 			$id = $id - 1;
 			$time = date('d-m-Y H:i'); 
 			$nowa = strtotime("+ ".$howLong." day",strtotime($time));
@@ -121,11 +123,11 @@ class DefaultController extends Controller
 			$asd->carlist->car[$id]->date = $nowa;
 
 			$asd -> asXML("cars.xml");
-			
+	
 			return new Response('OK');
 		} else {
 			return new Response('FAIL');
-		}
+		}	
 	}
 	
 	public function udanyAction() {
