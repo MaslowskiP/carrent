@@ -11,7 +11,7 @@ class Header {
 		$button2 = "http://v-ie.uek.krakow.pl/~s181008/przycisk2.jpg";
 		$button3 = "http://v-ie.uek.krakow.pl/~s181008/przycisk3.jpg";
 		
-		echo "<head><meta charset='UTF-8'></head><body>";
+		echo "<head><meta charset='UTF-8'><title>Wypo¿yczalnia Rycerze Jedi</title></head><body>";
 		echo "<div class='page'><center><div class='header'>";
 		echo "<center><a href='$homepage'><img src='$baner' alt='BANER' width='600' height='170' align='center'></a><br>";
 		echo "<a href='$homepage/lista'><img src='$button1' alt='PRZYCISK1'></a>";

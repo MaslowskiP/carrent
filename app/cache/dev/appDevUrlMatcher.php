@@ -151,6 +151,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'akceptacja')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::akceptacjaAction',));
         }
 
+        // udany
+        if ($pathinfo === '/dziekujemy') {
+            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::udanyAction',  '_route' => 'udany',);
+        }
+
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
     }
 }

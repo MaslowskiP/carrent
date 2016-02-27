@@ -14,7 +14,7 @@ use CarRent\Lista;
 use CarRent\Rezerwacja;
 use CarRent\Kontakt;
 use CarRent\Formularz;
-
+use CarRent\Udany;
 
 class DefaultController extends Controller
 {
@@ -63,8 +63,8 @@ class DefaultController extends Controller
 			'description' => $_GET['description'],
 			'control' => $_GET['id'],
 			'api_version' => 'dev',
-
-			
+			'URL' => 'http://v-ie.uek.krakow.pl/~s181008/app_dev.php/dziekujemy',
+			'type' => '0',
 		);
 		 $url = sprintf(
             		'%s?%s',
@@ -75,30 +75,63 @@ class DefaultController extends Controller
 	}
 
 	public function potwierdzenieAction(Request $request) {
-			//do wywalenia potem
-			$file = "asd.txt";
-			$fp = fopen($file, "a");
 
-					$xml_doc = 'cars.xml';
-			$asd = simplexml_load_file($xml_doc);
-			$id = $request->request->get('control');
-			$id = $id - 1;
-			$asd->carlist->car[$id]->status = '0';
-			$asd -> asXML("cars.xml");
-			fwrite($fp , $id);
-		//if ($signature_check == $signature) {
+			$PIN = "igdN78jSAWTfuG8H3prwlCT2klt76JMa";
+
+			$sign=$PIN.
+				$request->request->get('id').
+				$request->request->get('operation_number').
+				$request->request->get('operation_type').
+				$request->request->get('operation_status').
+				$request->request->get('operation_amount').
+				$request->request->get('operation_currency').
+				$request->request->get('operation_withdrawal_amount').
+				$request->request->get('operation_commission_amount').
+				$request->request->get('operation_original_amount').
+				$request->request->get('operation_original_currency').
+				$request->request->get('operation_datetime').
+				$request->request->get('operation_related_number').
+				$request->request->get('control').
+				$request->request->get('description').
+				$request->request->get('email').
+				$request->request->get('p_info').
+				$request->request->get('p_email').
+				$request->request->get('channel').
+				$request->request->get('channel_country').
+				$request->request->get('geoip_country');
+			$signature=hash('sha256', $sign);
+			$signature_check = $request->request->get('signature');
+			
+		if ($signature_check == $signature) {
 	
+			$mailto = $request->request->get('email');
+			$topic = "Wypo¿yczenie samochodu";
+			$message = "Transakcja przebieg³a prawid³owo. Dziêkujemy za skorzystanie z us³ug naszego serwisu.";
+			$message = wordwrap($message, 70);
+			$mailHeader = "From: Rycerze_Jedi; kontakt@rycerzejedi.com";
+			mail($mailto, $topic, $message, $mailHeader) or die('B³¹d: wiadomoœæ nie zosta³a wys³ana');
+			$xml_doc = 'cars.xml';
+			$asd = simplexml_load_file($xml_doc);
+			$control_all = $request->request->get('control');
+			list($id, $howLong) = explode("A", $control_all);
+			$id = $id - 1;
+			$time = date('d-m-Y H:i'); 
+			$nowa = strtotime("+ ".$howLong." day",strtotime($time));
+			$nowa = date('d-m-Y H:i', $nowa);
+			$asd->carlist->car[$id]->date = $nowa;
 
-
-
+			$asd -> asXML("cars.xml");
+			
 			return new Response('OK');
-		//} else {
-			//return new Response('FAIL');
-		//}
+		} else {
+			return new Response('FAIL');
+		}
 	}
-
-
-
-
-
+	
+	public function udanyAction() {
+		$header = new Header();
+		$page = new Udany();
+		return $this->render('default/styles.html.twig');   
+	
+	}
 }

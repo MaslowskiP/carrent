@@ -11,7 +11,7 @@
 		<id>1</id>
 		<cost prize="zl">120</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Audi</brand>
 		<model>A4</model>
@@ -20,7 +20,7 @@
 		<id>2</id>
 		<cost prize="zl">170</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Audi</brand>
 		<model>A8</model>
@@ -29,7 +29,7 @@
 		<id>3</id>
 		<cost prize="zl">300</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Audi</brand>
 		<model>TT</model>
@@ -38,7 +38,7 @@
 		<id>4</id>
 		<cost prize="zl">500</cost>
 		<status>1</status>
-	</car>
+		<date>27-02-2016 16:50</date>	</car>
 	<car>
 		<brand>BMW</brand>
 		<model>520d</model>
@@ -47,7 +47,7 @@
 		<id>5</id>
 		<cost prize="zl">250</cost>
 		<status>1</status>
-	</car>
+		<date>27-02-2016 16:47</date>	</car>
 	<car>
 		<brand>Ford</brand>
 		<model>Focus</model>
@@ -56,7 +56,7 @@
 		<id>6</id>
 		<cost prize="zl">200</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Ford</brand>
 		<model>Ka</model>
@@ -65,7 +65,7 @@
 		<id>7</id>
 		<cost prize="zl">70</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Hyundai</brand>
 		<model>i10</model>
@@ -74,7 +74,7 @@
 		<id>8</id>
 		<cost prize="zl">80</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Hyundai</brand>
 		<model>i20</model>
@@ -83,7 +83,7 @@
 		<id>9</id>
 		<cost prize="zl">120</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Hyundai</brand>
 		<model>i30</model>
@@ -92,7 +92,7 @@
 		<id>10</id>
 		<cost prize="zl">150</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Mercedes-Benz</brand>
 		<model>W205</model>
@@ -101,7 +101,7 @@
 		<id>11</id>
 		<cost prize="zl">200</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Mercedes-Benz</brand>
 		<model>W245</model>
@@ -110,7 +110,7 @@
 		<id>12</id>
 		<cost prize="zl">160</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Opel</brand>
 		<model>Corsa</model>
@@ -119,7 +119,7 @@
 		<id>13</id>
 		<cost prize="zl">130</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Opel</brand>
 		<model>Astra</model>
@@ -128,7 +128,7 @@
 		<id>14</id>
 		<cost prize="zl">140</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Opel</brand>
 		<model>Vivaro</model>
@@ -137,7 +137,7 @@
 		<id>15</id>
 		<cost prize="zl">400</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Toyota</brand>
 		<model>Aigo</model>
@@ -146,7 +146,7 @@
 		<id>16</id>
 		<cost prize="zl">100</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>Opel</brand>
 		<model>Yaris</model>
@@ -155,7 +155,7 @@
 		<id>17</id>
 		<cost prize="zl">130</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>VW</brand>
 		<model>Polo</model>
@@ -164,7 +164,7 @@
 		<id>18</id>
 		<cost prize="zl">140</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>VW</brand>
 		<model>Golf</model>
@@ -173,7 +173,7 @@
 		<id>19</id>
 		<cost prize="zl">160</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>VW</brand>
 		<model>Passat</model>
@@ -182,7 +182,7 @@
 		<id>20</id>
 		<cost prize="zl">280</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	<car>
 		<brand>VW</brand>
 		<model>Phaeton</model>
@@ -191,7 +191,7 @@
 		<id>21</id>
 		<cost prize="zl">300</cost>
 		<status>1</status>
-	</car>
+		<date>10-02-2016 20:00</date>	</car>
 	
 </carlist>
 </rss>

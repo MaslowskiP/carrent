@@ -32,3 +32,8 @@ akceptacja:
     path: /akceptacja/{id_samochodu}
     defaults:
         _controller: AppBundle:Default:akceptacja
+
+udany:
+    path: /dziekujemy
+    defaults:
+        _controller: AppBundle:Default:udany

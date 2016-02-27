@@ -43,6 +43,7 @@ class appDevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
         'potwierdzenie' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'AppBundle\\Controller\\DefaultController::potwierdzenieAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/potwierdzenie',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'kontakt' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'AppBundle\\Controller\\DefaultController::kontaktAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/kontakt',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
         'akceptacja' => array (  0 =>   array (    0 => 'id_samochodu',  ),  1 =>   array (    '_controller' => 'AppBundle\\Controller\\DefaultController::akceptacjaAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'id_samochodu',    ),    1 =>     array (      0 => 'text',      1 => '/akceptacja',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
+        'udany' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'AppBundle\\Controller\\DefaultController::udanyAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/dziekujemy',    ),  ),  4 =>   array (  ),  5 =>   array (  ),),
     );
         }
     }
