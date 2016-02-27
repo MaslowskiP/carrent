@@ -15,26 +15,28 @@ class __TwigTemplate_0d494d0d29d44759e1019e434fbc6001a371e6f6272c7a0678ce429fe4a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_2b6e3934cfdf39899289762d6ed98143b3c4c80042b0777f096d0b1a06c6dee3 = $this->env->getExtension("native_profiler");
-        $__internal_2b6e3934cfdf39899289762d6ed98143b3c4c80042b0777f096d0b1a06c6dee3->enter($__internal_2b6e3934cfdf39899289762d6ed98143b3c4c80042b0777f096d0b1a06c6dee3_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/styles.html.twig"));
+        $__internal_8be59edeb7c103ee4239d9248feb45ef5d2fe6c51fe8501025790fc5f29667cf = $this->env->getExtension("native_profiler");
+        $__internal_8be59edeb7c103ee4239d9248feb45ef5d2fe6c51fe8501025790fc5f29667cf->enter($__internal_8be59edeb7c103ee4239d9248feb45ef5d2fe6c51fe8501025790fc5f29667cf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "default/styles.html.twig"));
 
         // line 1
         echo "<style>
-div.page {
-\t
+body {
+\tbackground-color: #e9eaed;
+
 
 }
 div.header {
+\tfont-family:Calibri;
 \tpadding-bottom: 200;
 \twidth: 800;
-\tbackground-color: lightblue;
+\tbackground-color: #ffffff;
 \ttext-align: justify;
 }
 
 
 </style>";
         
-        $__internal_2b6e3934cfdf39899289762d6ed98143b3c4c80042b0777f096d0b1a06c6dee3->leave($__internal_2b6e3934cfdf39899289762d6ed98143b3c4c80042b0777f096d0b1a06c6dee3_prof);
+        $__internal_8be59edeb7c103ee4239d9248feb45ef5d2fe6c51fe8501025790fc5f29667cf->leave($__internal_8be59edeb7c103ee4239d9248feb45ef5d2fe6c51fe8501025790fc5f29667cf_prof);
 
     }
 
@@ -49,14 +51,16 @@ div.header {
     }
 }
 /* <style>*/
-/* div.page {*/
-/* 	*/
+/* body {*/
+/* 	background-color: #e9eaed;*/
+/* */
 /* */
 /* }*/
 /* div.header {*/
+/* 	font-family:Calibri;*/
 /* 	padding-bottom: 200;*/
 /* 	width: 800;*/
-/* 	background-color: lightblue;*/
+/* 	background-color: #ffffff;*/
 /* 	text-align: justify;*/
 /* }*/
 /* */
