@@ -14,9 +14,14 @@ rezerwacja:
         _controller: AppBundle:Default:rezerwacja
 
 platnosc:
-    path: /platnosc/{id_samochodu}
+    path: /platnosc/
     defaults:
         _controller: AppBundle:Default:platnosc
+
+potwierdzenie:
+    path: /potwierdzenie
+    defaults:
+        _controller: AppBundle:Default:potwierdzenie
 
 kontakt:
     path: /kontakt

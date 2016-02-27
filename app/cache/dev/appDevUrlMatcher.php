@@ -124,9 +124,21 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::rezerwacjaAction',  '_route' => 'rezerwacja',);
         }
 
-        // platnosc
-        if (0 === strpos($pathinfo, '/platnosc') && preg_match('#^/platnosc/(?P<id_samochodu>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'platnosc')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::platnoscAction',));
+        if (0 === strpos($pathinfo, '/p')) {
+            // platnosc
+            if (rtrim($pathinfo, '/') === '/platnosc') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'platnosc');
+                }
+
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::platnoscAction',  '_route' => 'platnosc',);
+            }
+
+            // potwierdzenie
+            if ($pathinfo === '/potwierdzenie') {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::potwierdzenieAction',  '_route' => 'potwierdzenie',);
+            }
+
         }
 
         // kontakt

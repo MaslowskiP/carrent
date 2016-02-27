@@ -1,4 +1,4 @@
-<?xml version="1.0" ?>
+<?xml version="1.0"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 
 <carlist>
@@ -34,7 +34,7 @@
 		<brand>Audi</brand>
 		<model>TT</model>
 		<year data="year">2013</year>
-		<color>Zółty</color>
+		<color>Z&#xF3;&#x142;ty</color>
 		<id>4</id>
 		<cost prize="zl">500</cost>
 		<status>1</status>
@@ -133,7 +133,7 @@
 		<brand>Opel</brand>
 		<model>Vivaro</model>
 		<year data="year">2014</year>
-		<color>Biały</color>
+		<color>Bia&#x142;y</color>
 		<id>15</id>
 		<cost prize="zl">400</cost>
 		<status>1</status>
@@ -142,7 +142,7 @@
 		<brand>Toyota</brand>
 		<model>Aigo</model>
 		<year data="year">2016</year>
-		<color>Różowy</color>
+		<color>R&#xF3;&#x17C;owy</color>
 		<id>16</id>
 		<cost prize="zl">100</cost>
 		<status>1</status>

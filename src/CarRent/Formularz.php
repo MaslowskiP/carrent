@@ -80,14 +80,20 @@ echo "Wybra³eœ samochód $brand $model. W celu dokonania zakupu podaj swój adres 
 					//TU WYÅšWIETLA CZY JEST RABAT CZY NIE MA
 					if($a >1){
 
-
+						//PONI¯EJ TESTY!!!!!
+						//$xml_doc = 'cars.xml';
+						//$asd = simplexml_load_file($xml_doc);
+						//$id = $id - 1;
+						//$asd->carlist->car[$id]->status = '0';
+						//$asd -> asXML("cars.xml");
 						$a++;
 						$cena;
 						echo "Poniewa¿ to twoje $a zamówienie w przeci¹gu miesi¹ca otrzymujesz rabat w wysokoœci 20%<BR>";
 						$cena = $howLong * $cost;
 						$rabat = 20*$cena/100;
 						$cena = $cena-$rabat;
-						echo "Ca³kowity koszt wynosi $cena z³otych";
+						$potwierdzenie = 'http://v-ie.uek.krakow.pl/~s181008/app_dev.php/platnosc/?cost='.$cena.'&description='.$brand.'+'.$model;
+						echo "Ca³kowity koszt wynosi $cena z³otych <a href='$potwierdzenie'>- zap³aæ</a>";
 					} else{
 						$cena = $howLong * $cost;
 						if ($howLong > 7)

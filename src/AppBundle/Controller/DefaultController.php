@@ -57,10 +57,34 @@ class DefaultController extends Controller
 	}
 
 	public function platnoscAction(Request $request) {
+			$params = array(
+			'id' => '789420',
+			'amount' => $_GET['cost'],
+			'description' => $_GET['description'],
+			'control' => 'z1',
+
+			
+		);
+
+		
+		
+		
+
+		//https://ssl.dotpay.pl/test_payment/?id=789420&amount=666.66
+		 $url = sprintf(
+            		'%s?%s',
+            		'https://ssl.dotpay.pl/test_payment/',
+           		 http_build_query($params)
+       	 );		
+		return new RedirectResponse($url);
+	}
+
+	public function potwierdzenieAction(Request $request) {
 		$id = $request->get('id_samochodu');
 		return new Response('chce zap³aciæ sa samochód $id');
 	
 	}
+
 
 
 
