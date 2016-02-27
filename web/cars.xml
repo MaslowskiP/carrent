@@ -91,7 +91,7 @@
 		<color>Srebrny</color>
 		<id>10</id>
 		<cost prize="zl">150</cost>
-		<status>0</status>
+		<status>1</status>
 	</car>
 	<car>
 		<brand>Mercedes-Benz</brand>

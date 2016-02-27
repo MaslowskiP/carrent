@@ -61,16 +61,11 @@ class DefaultController extends Controller
 			'id' => '789420',
 			'amount' => $_GET['cost'],
 			'description' => $_GET['description'],
-			'control' => 'z1',
+			'control' => $_GET['id'],
+			'api_version' => 'dev',
 
 			
 		);
-
-		
-		
-		
-
-		//https://ssl.dotpay.pl/test_payment/?id=789420&amount=666.66
 		 $url = sprintf(
             		'%s?%s',
             		'https://ssl.dotpay.pl/test_payment/',
@@ -80,9 +75,26 @@ class DefaultController extends Controller
 	}
 
 	public function potwierdzenieAction(Request $request) {
-		$id = $request->get('id_samochodu');
-		return new Response('chce zap³aciæ sa samochód $id');
+			//do wywalenia potem
+			$file = "asd.txt";
+			$fp = fopen($file, "a");
+
+					$xml_doc = 'cars.xml';
+			$asd = simplexml_load_file($xml_doc);
+			$id = $request->request->get('control');
+			$id = $id - 1;
+			$asd->carlist->car[$id]->status = '0';
+			$asd -> asXML("cars.xml");
+			fwrite($fp , $id);
+		//if ($signature_check == $signature) {
 	
+
+
+
+			return new Response('OK');
+		//} else {
+			//return new Response('FAIL');
+		//}
 	}
 
 
