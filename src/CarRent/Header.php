@@ -12,7 +12,7 @@ class Header {
 		$button3 = "http://v-ie.uek.krakow.pl/~s181008/przycisk3.jpg";
 		$blank = "http://v-ie.uek.krakow.pl/~s181008/blank.jpg";
 		
-		echo "<head><meta charset='UTF-8'><title>Wypoøyczalnia Rycerze Jedi</title></head><body>";
+		echo "<head><meta charset='UTF-8'><title>Wypo≈ºyczalnia Rycerze Jedi</title></head><body>";
 		echo "<div class='page'><center><div class='header'>";
 		echo "<center><a href='$homepage'><img src='$baner' alt='BANER' width='600' height='170' align='center'></a><br>";
 		echo "<img src='$blank'>";

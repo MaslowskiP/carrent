@@ -26,7 +26,7 @@ if($asd)
 //--- poczÄ…tek formularza ---
 if(empty($_POST['submit'])) {
 
-echo "Wybra³eœ samochód $brand $model. W celu dokonania zakupu podaj swój adres mailowy oraz liczbê dni na które chcesz wypo¿yczyæ samochód. Cena za jeden dzieñ wynosi $cost z³otych.<table><form action='' method='post'><tr><td>E-Mail:</td><td><input type='text' name='formEmail'/></td></tr><tr><td>Wybierz iloœæ dni:</td><td><select name='howLong'><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option></select></td></tr><tr><td>&nbsp;</td><td><input type='submit' name='submit' value='Wypo¿ycz'/></td></tr></form></table>";
+echo "WybraÅ‚eÅ› samochÃ³d $brand $model. W celu dokonania zakupu podaj swÃ³j adres mailowy oraz liczbÄ™ dni na ktÃ³re chcesz wypoÅ¼yczyÄ‡ samochÃ³d. Cena za jeden dzieÅ„ wynosi $cost zÅ‚otych.<table><form action='' method='post'><tr><td>E-Mail:</td><td><input type='text' name='formEmail'/></td></tr><tr><td>Wybierz iloÅ›Ä‡ dni:</td><td><select name='howLong'><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option><option>24</option><option>25</option><option>26</option><option>27</option><option>28</option><option>29</option><option>30</option></select></td></tr><tr><td>&nbsp;</td><td><input type='submit' name='submit' value='WypoÅ¼ycz'/></td></tr></form></table>";
 }	else {
 
 		$time = date('d-m-Y H:i'); 
@@ -44,7 +44,7 @@ echo "Wybra³eœ samochód $brand $model. W celu dokonania zakupu podaj swój adres 
 		$howLong = $_POST['howLong'];
 
 		if(!empty($formEmail)) {
-		//--- poczÄ…tek funkcji weryfikujÄ…cej adres e-mail ---
+		//--- poczÃ„â€¦tek funkcji weryfikujÄ…cej adres e-mail ---
 				function checkMail($checkmail) {
 					if(filter_var($checkmail, FILTER_VALIDATE_EMAIL)) {
 						$mailParts = explode('@', $checkmail);
@@ -87,23 +87,23 @@ echo "Wybra³eœ samochód $brand $model. W celu dokonania zakupu podaj swój adres 
 						
 						$a++;
 						$cena;
-						echo "Poniewa¿ to twoje $a zamówienie w przeci¹gu miesi¹ca otrzymujesz rabat w wysokoœci 20%<BR>";
+						echo "PoniewaÅ¼ to twoje $a zamÃ³wienie w przeciÄ…gu miesiÄ…ca otrzymujesz rabat w wysokoÅ›ci 20%<BR>";
 						$cena = $howLong * $cost;
 						$rabat = 20*$cena/100;
 						$cena = $cena-$rabat;
 						$potwierdzenie = 'http://v-ie.uek.krakow.pl/~s181008/app_dev.php/platnosc/?cost='.$cena.'&description='.$brand.'+'.$model.'&id='.$id.'A'.$howLong;
-						echo "Ca³kowity koszt wynosi $cena z³otych <a href='$potwierdzenie'>- zap³aæ</a>";
+						echo "CaÅ‚kowity koszt wynosi $cena zÅ‚otych <a href='$potwierdzenie'>- zapÅ‚aÄ‡</a>";
 					} else{
 						$cena = $howLong * $cost;
 						if ($howLong > 7)
 							{
-								echo "Poniewa¿ wypo¿yczy³eœ samochód na wiêcej ni¿ tydzieñ dostajesz rabat 10%<BR>";
+								echo "PoniewaÅ¼ wypoÅ¼yczyÅ‚eÅ› samochÃ³d na wiÄ™cej niÅ¼ tydzieÅ„ dostajesz rabat 10%<BR>";
 								$rabat = 10*$cena/100;
 								$cena = $cena-$rabat;
 							}
 
 						$potwierdzenie = 'http://v-ie.uek.krakow.pl/~s181008/app_dev.php/platnosc/?cost='.$cena.'&description='.$brand.'+'.$model.'&id='.$id;
-						echo "Ca³kowity koszt wynosi $cena z³otych <a href='$potwierdzenie'>- zap³aæ</a>";
+						echo "CaÅ‚kowity koszt wynosi $cena zÅ‚otych <a href='$potwierdzenie'>- zapÅ‚aÄ‡</a>";
 					}
 				}
 				
@@ -122,7 +122,7 @@ echo "Wybra³eœ samochód $brand $model. W celu dokonania zakupu podaj swój adres 
 
 		} 	else {
 			  //komunikat w przypadku nie powodzenia
-			  echo 'WypeÅ‚nij wszystkie pola formularza';
+			  echo 'WypeÄ¹â€šnij wszystkie pola formularza';
 			}
 
 		//		--- koniec formularza ---

@@ -105,11 +105,11 @@ class DefaultController extends Controller
 		if ($signature_check == $signature) {
 	
 			$mailto = $request->request->get('email');
-			$topic = "Wypo¿yczenie samochodu";
-			$message = "Transakcja przebieg³a prawid³owo. Dziêkujemy za skorzystanie z us³ug naszego serwisu.";
+			$topic = "WypoÅ¼yczenie samochodu";
+			$message = "Transakcja przebiegÅ‚a prawidÅ‚owo. DziÄ™kujemy za skorzystanie z usÅ‚ug naszego serwisu.";
 			$message = wordwrap($message, 70);
 			$mailHeader = "From: Rycerze_Jedi; kontakt@rycerzejedi.com";
-			mail($mailto, $topic, $message, $mailHeader) or die('B³¹d: wiadomoœæ nie zosta³a wys³ana');
+			mail($mailto, $topic, $message, $mailHeader) or die('BÅ‚Ä…d: wiadomoÅ›Ä‡ nie zostaÅ‚a wysÅ‚ana');
 			$xml_doc = 'cars.xml';
 			$asd = simplexml_load_file($xml_doc);
 			$control_all = $request->request->get('control');

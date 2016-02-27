@@ -5,7 +5,7 @@ namespace CarRent;
 class Udany {
 
 	public function __construct() {
-		echo "DziÍkujemy za wypoøyczenie samochodu w naszym serwisie. Na podany adres wys≥ana zosta≥a informacja z potwierdzeniem zamÛwienia";
+		echo "Dziƒôkujemy za wypo≈ºyczenie samochodu w naszym serwisie. Na podany adres wys≈Çana zosta≈Ça informacja z potwierdzeniem zam√≥wienia";
 	}
 
 }
